@@ -1,0 +1,15 @@
+crop,true_class,pred_class,correct,image
+Apple,Apple___healthy,Apple___healthy,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Apple___healthy/image (1327).JPG
+Blueberry,Blueberry___healthy,Blueberry___healthy,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Blueberry___healthy/image (1260).JPG
+Cherry,Cherry___healthy,Cherry___healthy,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Cherry___healthy/image (9).JPG
+Corn,Corn___healthy,Corn___healthy,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Corn___healthy/image (399).jpg
+Grape,Grape___healthy,Grape___healthy,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Grape___healthy/image (133).JPG
+Orange,Orange___Haunglongbing_(Citrus_greening),Orange___Haunglongbing_(Citrus_greening),True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Orange___Haunglongbing_(Citrus_greening)/image (5477).JPG
+Peach,Peach___healthy,Peach___healthy,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Peach___healthy/image (179).JPG
+"Pepper,_bell","Pepper,_bell___healthy","Pepper,_bell___healthy",True,"/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Pepper,_bell___healthy/image (542).JPG"
+Potato,Potato___healthy,Potato___healthy,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Potato___healthy/image (109).JPG
+Raspberry,Raspberry___healthy,Raspberry___healthy,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Raspberry___healthy/image (285).JPG
+Soybean,Soybean___healthy,Soybean___healthy,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Soybean___healthy/image (3177).JPG
+Squash,Squash___Powdery_mildew,Squash___Powdery_mildew,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Squash___Powdery_mildew/image (1359).JPG
+Strawberry,Strawberry___healthy,Strawberry___healthy,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Strawberry___healthy/image (95).JPG
+Tomato,Tomato___healthy,Tomato___healthy,True,/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Tomato___healthy/image (79).JPG
