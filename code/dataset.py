@@ -13,9 +13,12 @@ from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 from PIL import Image
 
-PV_ROOT = Path("/home/victus/datasets/plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation")
-PD_TRAIN_ROOT = Path("/home/victus/datasets/plantdoc/PlantDoc-Dataset/train")
-PD_TEST_ROOT = Path("/home/victus/datasets/plantdoc/PlantDoc-Dataset/test")
+# Dataset roots. Default to the original workstation layout; allow override via
+# the DATA_ROOT environment variable so the same code runs on other machines.
+_DR = os.environ.get("DATA_ROOT", "/home/victus/datasets")
+PV_ROOT = Path(_DR) / "plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation"
+PD_TRAIN_ROOT = Path(_DR) / "plantdoc/PlantDoc-Dataset/train"
+PD_TEST_ROOT = Path(_DR) / "plantdoc/PlantDoc-Dataset/test"
 
 # Classes to skip (not real plant disease classes)
 PV_SKIP = {"Background_without_leaves"}

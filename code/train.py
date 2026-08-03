@@ -18,7 +18,7 @@ from dataset import (
 )
 from model import HybridLeafClassifier, SingleBackbone
 
-RESULTS = Path("/home/victus/Papers/Victus_Pardus_0011_Plant_Disease_XAI/Frontiers_Plant_Science/results")
+RESULTS = Path(os.environ.get("RESULTS_DIR", "/home/victus/Papers/Victus_Pardus_0011_Plant_Disease_XAI/Frontiers_Plant_Science/results"))
 
 
 def build_model(name: str, num_classes: int, img_size: int, pretrained: bool = True) -> nn.Module:

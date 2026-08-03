@@ -1,0 +1,11 @@
+{
+  "zero_shot_pd_test_acc": 0.211864406779661,
+  "zero_shot_pd_test_macro_f1": 0.1968236509802844,
+  "finetuned_pd_test_acc": 0.6313559322033898,
+  "finetuned_pd_test_macro_f1": 0.6201850672241982,
+  "n_fit": 2340,
+  "n_eval": 236,
+  "shared_classes": 27,
+  "epochs": 30,
+  "lr": 5e-05
+}

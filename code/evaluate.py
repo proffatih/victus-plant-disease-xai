@@ -8,7 +8,7 @@ shared-label PlantDoc subset. Writes:
   - per_class_report_pv.csv
 """
 from __future__ import annotations
-import json, csv, sys, time
+import os, json, csv, sys, time
 from pathlib import Path
 import numpy as np
 import torch
@@ -23,7 +23,7 @@ from dataset import (
 )
 from model import HybridLeafClassifier
 
-RESULTS = Path("/home/victus/Papers/Victus_Pardus_0011_Plant_Disease_XAI/Frontiers_Plant_Science/results")
+RESULTS = Path(os.environ.get("RESULTS_DIR", "/home/victus/Papers/Victus_Pardus_0011_Plant_Disease_XAI/Frontiers_Plant_Science/results"))
 
 
 def load_split_from_csv(path: Path):

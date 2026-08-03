@@ -13,8 +13,10 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).parent))
 from dataset import PV_ROOT, PD_TRAIN_ROOT, PD_TEST_ROOT, PLANTDOC_TO_PV
 
-RESULTS = Path("/home/victus/Papers/Victus_Pardus_0011_Plant_Disease_XAI/Frontiers_Plant_Science/results")
-FIGDIR = Path("/home/victus/Papers/Victus_Pardus_0011_Plant_Disease_XAI/Frontiers_Plant_Science/figures")
+import os
+_BASE = os.environ.get("FPS_BASE", "/home/victus/Papers/Victus_Pardus_0011_Plant_Disease_XAI/Frontiers_Plant_Science")
+RESULTS = Path(os.environ.get("RESULTS_DIR", f"{_BASE}/results"))
+FIGDIR = Path(os.environ.get("FIGDIR", f"{_BASE}/figures"))
 FIGDIR.mkdir(parents=True, exist_ok=True)
 
 # Wong colorblind-safe palette
@@ -223,7 +225,10 @@ def fig6_cross_dataset():
     pv = json.load(open(pv_path))
     pd = json.load(open(pd_path))
 
-    fig, (a1, a2) = plt.subplots(1, 2, figsize=(9, 3.8))
+    # Taller figure + width ratios so the 27-row right panel has vertical room;
+    # left panel gets a narrow column so its two bars are not over-stretched.
+    fig, (a1, a2) = plt.subplots(1, 2, figsize=(9, 6.4),
+                                 gridspec_kw={"width_ratios": [1, 1.35]})
 
     xs = ["PlantVillage\n(in-domain)", "PlantDoc\n(cross-domain)"]
     ys = [pv["acc"], pd["acc"]]
@@ -234,18 +239,21 @@ def fig6_cross_dataset():
     for b, v in zip(bars, ys):
         a1.text(b.get_x() + b.get_width()/2, v + 0.015, f"{v:.3f}", ha="center", fontsize=9, weight="bold")
 
-    # per-class PlantDoc accuracy (top 12 by support order in dict)
+    # per-class PlantDoc accuracy — single-line labels (no embedded newline) so
+    # the 27 y-tick labels do not overprint each other.
     per = pd.get("per_class_acc", {})
     items = sorted(per.items(), key=lambda x: -x[1])
     if items:
-        classes = [k.replace("___", "\n").replace("_", " ")[:24] for k, _ in items]
+        classes = [k.replace("___", " / ").replace("_", " ")[:30] for k, _ in items]
         vals = [v for _, v in items]
         y_pos = np.arange(len(classes))
         a2.barh(y_pos, vals, color=WONG[6], edgecolor="black", linewidth=0.4)
         a2.set_yticks(y_pos); a2.set_yticklabels(classes, fontsize=6.5)
+        a2.tick_params(axis="y", pad=1)
         a2.set_xlim(0, 1.02); a2.set_xlabel("PlantDoc accuracy")
         a2.set_title(f"Per-class PlantDoc accuracy ({len(items)} shared classes)", fontsize=10)
         a2.invert_yaxis()
+        a2.margins(y=0.01)
 
     fig.suptitle("Cross-dataset generalisation", fontsize=11, weight="bold")
     plt.tight_layout()
