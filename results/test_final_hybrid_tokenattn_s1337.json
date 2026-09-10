@@ -1,0 +1,19 @@
+{
+  "model": "hybrid",
+  "fusion": "token_cross_attn",
+  "seed": 1337,
+  "preproc": "aspect",
+  "test": {
+    "loss": 0.0523988844171633,
+    "acc": 0.9992633517495396,
+    "top5": 1.0
+  },
+  "best_val": 0.9985267034990792,
+  "selected_epoch": 15,
+  "epochs": 15,
+  "img": 256,
+  "batch": 20,
+  "params_trainable": 50393634,
+  "params_total": 50942880,
+  "eval_precision": "fp32"
+}

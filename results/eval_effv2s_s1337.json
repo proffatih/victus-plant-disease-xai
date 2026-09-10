@@ -1,0 +1,235 @@
+{
+  "ckpt": "../results/best_effv2s_s1337.pt",
+  "tag": "effv2s_s1337",
+  "eval_precision": "fp32",
+  "model_name": "effv2s",
+  "fusion": "gated_linear",
+  "seed": 1337,
+  "benchmarks": {
+    "plantvillage_test_aspect": {
+      "tag": "plantvillage_test/aspect",
+      "n": 5430,
+      "accuracy": 0.9990791896869244,
+      "macro_f1": 0.9980477706589103,
+      "balanced_accuracy": 0.9981624228638823,
+      "mcc": 0.9990341816947105,
+      "n_true_classes": 38,
+      "n_distinct_predicted_classes": 38,
+      "crop_species_accuracy": 1.0,
+      "top_predicted_classes": [
+        [
+          "Orange___Haunglongbing_(Citrus_greening)",
+          551,
+          0.10147329650092081
+        ],
+        [
+          "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          536,
+          0.0987108655616943
+        ],
+        [
+          "Soybean___healthy",
+          509,
+          0.09373848987108656
+        ],
+        [
+          "Peach___Bacterial_spot",
+          230,
+          0.0423572744014733
+        ],
+        [
+          "Tomato___Bacterial_spot",
+          213,
+          0.039226519337016576
+        ]
+      ],
+      "max_single_class_prediction_share": 0.10147329650092081,
+      "mean_confidence": 0.950965940952301,
+      "mean_confidence_correct": 0.951201856136322,
+      "mean_confidence_incorrect": 0.6950496435165405,
+      "ece_15bin": 0.04875449223193455,
+      "mce_15bin": 0.49839210510253906,
+      "overconfidence_gap": -0.048113226890563965
+    },
+    "plantdoc_aspect": {
+      "tag": "plantdoc/aspect",
+      "n": 2578,
+      "accuracy": 0.21101629169899147,
+      "macro_f1": 0.15586781607643185,
+      "balanced_accuracy": 0.19787684729404353,
+      "mcc": 0.1968269521635672,
+      "n_true_classes": 28,
+      "n_distinct_predicted_classes": 35,
+      "crop_species_accuracy": 0.3929402637703646,
+      "top_predicted_classes": [
+        [
+          "Pepper,_bell___healthy",
+          617,
+          0.23933281613653995
+        ],
+        [
+          "Strawberry___Leaf_scorch",
+          280,
+          0.10861132660977502
+        ],
+        [
+          "Tomato___Late_blight",
+          272,
+          0.10550814584949574
+        ],
+        [
+          "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+          203,
+          0.07874321179208689
+        ],
+        [
+          "Corn___healthy",
+          160,
+          0.062063615205585725
+        ]
+      ],
+      "max_single_class_prediction_share": 0.23933281613653995,
+      "mean_confidence": 0.6018560528755188,
+      "mean_confidence_correct": 0.6907504796981812,
+      "mean_confidence_incorrect": 0.5780808925628662,
+      "ece_15bin": 0.39083972964016755,
+      "mce_15bin": 0.5939091589811036,
+      "overconfidence_gap": 0.39083975553512573
+    },
+    "plantdoc_square": {
+      "tag": "plantdoc/square",
+      "n": 2578,
+      "accuracy": 0.16097750193948798,
+      "macro_f1": 0.11537595957215335,
+      "balanced_accuracy": 0.15660103385179427,
+      "mcc": 0.14708765465801354,
+      "n_true_classes": 28,
+      "n_distinct_predicted_classes": 36,
+      "crop_species_accuracy": 0.3297129557796742,
+      "top_predicted_classes": [
+        [
+          "Pepper,_bell___healthy",
+          725,
+          0.28122575640031033
+        ],
+        [
+          "Strawberry___Leaf_scorch",
+          340,
+          0.13188518231186966
+        ],
+        [
+          "Tomato___Late_blight",
+          257,
+          0.09968968192397207
+        ],
+        [
+          "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+          234,
+          0.09076803723816912
+        ],
+        [
+          "Cherry___healthy",
+          149,
+          0.057796741660201705
+        ]
+      ],
+      "max_single_class_prediction_share": 0.28122575640031033,
+      "mean_confidence": 0.5813983678817749,
+      "mean_confidence_correct": 0.6968557238578796,
+      "mean_confidence_incorrect": 0.5592462420463562,
+      "ece_15bin": 0.4204208335504687,
+      "mce_15bin": 0.6263644272445613,
+      "overconfidence_gap": 0.42042088508605957
+    },
+    "plantwild_aspect": {
+      "tag": "plantwild/aspect",
+      "n": 7572,
+      "accuracy": 0.1649498151082937,
+      "macro_f1": 0.13702863575963875,
+      "balanced_accuracy": 0.183123725427467,
+      "mcc": 0.14724382793211352,
+      "n_true_classes": 33,
+      "n_distinct_predicted_classes": 38,
+      "crop_species_accuracy": 0.30097728473322766,
+      "top_predicted_classes": [
+        [
+          "Pepper,_bell___healthy",
+          2265,
+          0.2991283676703645
+        ],
+        [
+          "Strawberry___Leaf_scorch",
+          801,
+          0.10578446909667195
+        ],
+        [
+          "Tomato___Late_blight",
+          782,
+          0.10327522451135764
+        ],
+        [
+          "Corn___healthy",
+          576,
+          0.07606973058637084
+        ],
+        [
+          "Cherry___healthy",
+          482,
+          0.06365557316428949
+        ]
+      ],
+      "max_single_class_prediction_share": 0.2991283676703645,
+      "mean_confidence": 0.6049864292144775,
+      "mean_confidence_correct": 0.7245969772338867,
+      "mean_confidence_incorrect": 0.5813593864440918,
+      "ece_15bin": 0.4400365952868753,
+      "mce_15bin": 0.6747975850134397,
+      "overconfidence_gap": 0.4400365948677063
+    },
+    "plantwild_square": {
+      "tag": "plantwild/square",
+      "n": 7572,
+      "accuracy": 0.14170628631801374,
+      "macro_f1": 0.12064802676828651,
+      "balanced_accuracy": 0.16038283308658396,
+      "mcc": 0.12324438656266276,
+      "n_true_classes": 33,
+      "n_distinct_predicted_classes": 38,
+      "crop_species_accuracy": 0.2665081880612784,
+      "top_predicted_classes": [
+        [
+          "Pepper,_bell___healthy",
+          2447,
+          0.32316428948758585
+        ],
+        [
+          "Strawberry___Leaf_scorch",
+          911,
+          0.12031167459059694
+        ],
+        [
+          "Tomato___Late_blight",
+          704,
+          0.09297411516111992
+        ],
+        [
+          "Cherry___healthy",
+          610,
+          0.08055995773903857
+        ],
+        [
+          "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+          503,
+          0.06642894875858425
+        ]
+      ],
+      "max_single_class_prediction_share": 0.32316428948758585,
+      "mean_confidence": 0.5896627902984619,
+      "mean_confidence_correct": 0.7231634259223938,
+      "mean_confidence_incorrect": 0.5676215887069702,
+      "ece_15bin": 0.4479565654388824,
+      "mce_15bin": 0.7042757589231354,
+      "overconfidence_gap": 0.44795650243759155
+    }
+  }
+}

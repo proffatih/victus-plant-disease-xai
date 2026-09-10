@@ -1,0 +1,19 @@
+{
+  "model": "effv2s",
+  "fusion": "gated_linear",
+  "seed": 1337,
+  "preproc": "aspect",
+  "test": {
+    "loss": 0.05175906565746989,
+    "acc": 0.9990791896869244,
+    "top5": 1.0
+  },
+  "best_val": 0.9987108655616943,
+  "selected_epoch": 12,
+  "epochs": 15,
+  "img": 256,
+  "batch": 32,
+  "params_trainable": 20228726,
+  "params_total": 20228726,
+  "eval_precision": "fp32"
+}

@@ -1,0 +1,28 @@
+{
+  "attn_weights_shape": [
+    8,
+    1,
+    1
+  ],
+  "attn_weights_all_exactly_one": true,
+  "attn_weights_max_dev_from_1": 0.0,
+  "cross_term_query_independent": true,
+  "cross_term_max_abs_diff_between_queries": 0.0,
+  "attn_sublayer_exactly_linear_in_kv": true,
+  "attn_linearity_max_abs_residual": 1.430511474609375e-06,
+  "token_attn_sublayer_exactly_linear_in_kv": false,
+  "token_attn_linearity_max_abs_residual": 0.7049604654312134,
+  "token_block": {
+    "attn_weights_shape": [
+      8,
+      64,
+      64
+    ],
+    "n_keys": 64,
+    "weight_entropy_mean_nats": 4.125456809997559,
+    "max_entropy_if_uniform_nats": 4.158883094787598,
+    "weight_std_over_keys_mean": 0.004110510926693678,
+    "cross_term_query_independent": false,
+    "cross_term_max_abs_diff_between_queries": 0.20240792632102966
+  }
+}

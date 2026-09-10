@@ -1,0 +1,136 @@
+{
+  "device": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+  "torch": "2.6.0+cu124",
+  "img_size": 256,
+  "precision": "fp32",
+  "models": {
+    "effv2s": {
+      "params_total": 20228726,
+      "params_total_M": 20.228726,
+      "params_trainable_M": 20.228726,
+      "macs": 3751416576.0,
+      "macs_G": 3.751416576,
+      "macs_tool": "fvcore",
+      "timing_batch1": {
+        "batch": 1,
+        "n_warmup": 30,
+        "n_timed": 120,
+        "batch_latency_ms_mean": 5.625609580116968,
+        "batch_latency_ms_sd": 0.3991748264734346,
+        "per_image_ms_mean": 5.625609580116968,
+        "per_image_ms_sd": 0.3991748264734346,
+        "throughput_img_per_s": 177.75851412340776,
+        "peak_gpu_mem_MiB": 97.49560546875
+      },
+      "timing_batch32": {
+        "batch": 32,
+        "n_warmup": 30,
+        "n_timed": 120,
+        "batch_latency_ms_mean": 118.32043792431553,
+        "batch_latency_ms_sd": 0.49230994231535447,
+        "per_image_ms_mean": 3.6975136851348602,
+        "per_image_ms_sd": 0.015384685697354827,
+        "throughput_img_per_s": 270.4520077965653,
+        "peak_gpu_mem_MiB": 422.99560546875
+      },
+      "ckpt_file": "best_effv2s_s42.pt",
+      "ckpt_size_MiB": 78.03752326965332
+    },
+    "swinv2t": {
+      "params_total": 27608912,
+      "params_total_M": 27.608912,
+      "params_trainable_M": 27.608912,
+      "macs": 5961565440.0,
+      "macs_G": 5.96156544,
+      "macs_tool": "fvcore",
+      "timing_batch1": {
+        "batch": 1,
+        "n_warmup": 30,
+        "n_timed": 120,
+        "batch_latency_ms_mean": 8.10560406340907,
+        "batch_latency_ms_sd": 0.24178595908112896,
+        "per_image_ms_mean": 8.10560406340907,
+        "per_image_ms_sd": 0.24178595908112896,
+        "throughput_img_per_s": 123.37143440231377,
+        "peak_gpu_mem_MiB": 137.49951171875
+      },
+      "timing_batch32": {
+        "batch": 32,
+        "n_warmup": 30,
+        "n_timed": 120,
+        "batch_latency_ms_mean": 202.89626515004784,
+        "batch_latency_ms_sd": 0.7783359414542494,
+        "per_image_ms_mean": 6.340508285938995,
+        "per_image_ms_sd": 0.024322998170445295,
+        "throughput_img_per_s": 157.71606232542058,
+        "peak_gpu_mem_MiB": 764.24951171875
+      },
+      "ckpt_file": "best_swinv2t_s42.pt",
+      "ckpt_size_MiB": 105.40959072113037
+    },
+    "hybrid_gated": {
+      "params_total": 50348448,
+      "params_total_M": 50.348448,
+      "params_trainable_M": 49.799202,
+      "macs": 9715488256.0,
+      "macs_G": 9.715488256,
+      "macs_tool": "fvcore",
+      "timing_batch1": {
+        "batch": 1,
+        "n_warmup": 30,
+        "n_timed": 120,
+        "batch_latency_ms_mean": 13.468367784904936,
+        "batch_latency_ms_sd": 0.21554353683515026,
+        "per_image_ms_mean": 13.468367784904936,
+        "per_image_ms_sd": 0.21554353683515026,
+        "throughput_img_per_s": 74.24804668022053,
+        "peak_gpu_mem_MiB": 226.76513671875
+      },
+      "timing_batch32": {
+        "batch": 32,
+        "n_warmup": 30,
+        "n_timed": 120,
+        "batch_latency_ms_mean": 320.58406942524016,
+        "batch_latency_ms_sd": 0.4389180811474877,
+        "per_image_ms_mean": 10.018252169538755,
+        "per_image_ms_sd": 0.01371619003585899,
+        "throughput_img_per_s": 99.81781083935726,
+        "peak_gpu_mem_MiB": 854.16650390625
+      },
+      "ckpt_file": "best_hybrid_gated_s42.pt",
+      "ckpt_size_MiB": 193.02395153045654
+    },
+    "hybrid_tokenattn": {
+      "params_total": 50942880,
+      "params_total_M": 50.94288,
+      "params_trainable_M": 50.393634,
+      "macs": 9915154688.0,
+      "macs_G": 9.915154688,
+      "macs_tool": "fvcore",
+      "timing_batch1": {
+        "batch": 1,
+        "n_warmup": 30,
+        "n_timed": 120,
+        "batch_latency_ms_mean": 13.696141626375416,
+        "batch_latency_ms_sd": 0.2288685539692584,
+        "per_image_ms_mean": 13.696141626375416,
+        "per_image_ms_sd": 0.2288685539692584,
+        "throughput_img_per_s": 73.01326368254288,
+        "peak_gpu_mem_MiB": 228.84033203125
+      },
+      "timing_batch32": {
+        "batch": 32,
+        "n_warmup": 30,
+        "n_timed": 120,
+        "batch_latency_ms_mean": 325.62865192691487,
+        "batch_latency_ms_sd": 0.4509954727132865,
+        "per_image_ms_mean": 10.17589537271609,
+        "per_image_ms_sd": 0.014093608522290203,
+        "throughput_img_per_s": 98.27145065595205,
+        "peak_gpu_mem_MiB": 866.27783203125
+      },
+      "ckpt_file": "best_hybrid_tokenattn_s42.pt",
+      "ckpt_size_MiB": 195.30061054229736
+    }
+  }
+}

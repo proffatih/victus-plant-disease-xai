@@ -1,0 +1,98 @@
+{
+  "mapping": {
+    "apple black rot": "Apple___Black_rot",
+    "apple leaf": "Apple___healthy",
+    "apple rust": "Apple___Cedar_apple_rust",
+    "apple scab": "Apple___Apple_scab",
+    "bell pepper leaf": "Pepper,_bell___healthy",
+    "bell pepper leaf spot": "Pepper,_bell___Bacterial_spot",
+    "blueberry leaf": "Blueberry___healthy",
+    "cherry leaf": "Cherry___healthy",
+    "cherry powdery mildew": "Cherry___Powdery_mildew",
+    "citrus greening disease": "Orange___Haunglongbing_(Citrus_greening)",
+    "corn gray leaf spot": "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+    "corn leaf": "Corn___healthy",
+    "corn northern leaf blight": "Corn___Northern_Leaf_Blight",
+    "corn rust": "Corn___Common_rust",
+    "grape black rot": "Grape___Black_rot",
+    "grape leaf": "Grape___healthy",
+    "peach leaf": "Peach___healthy",
+    "potato early blight": "Potato___Early_blight",
+    "potato late blight": "Potato___Late_blight",
+    "potato leaf": "Potato___healthy",
+    "raspberry leaf": "Raspberry___healthy",
+    "soybean leaf": "Soybean___healthy",
+    "squash powdery mildew": "Squash___Powdery_mildew",
+    "strawberry leaf": "Strawberry___healthy",
+    "strawberry leaf scorch": "Strawberry___Leaf_scorch",
+    "tomato bacterial leaf spot": "Tomato___Bacterial_spot",
+    "tomato early blight": "Tomato___Early_blight",
+    "tomato late blight": "Tomato___Late_blight",
+    "tomato leaf": "Tomato___healthy",
+    "tomato leaf mold": "Tomato___Leaf_Mold",
+    "tomato mosaic virus": "Tomato___Tomato_mosaic_virus",
+    "tomato septoria leaf spot": "Tomato___Septoria_leaf_spot",
+    "tomato yellow leaf curl virus": "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+  },
+  "ambiguous_excluded": {
+    "grape leaf spot": {
+      "candidate": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "reason": "'grape leaf spot' is used for several grape foliar diseases; PlantWild also carries 'grape downy mildew' separately, so the intended pathogen is not determinable from the label alone"
+    },
+    "apple mosaic virus": {
+      "candidate": null,
+      "reason": "no apple mosaic class exists in PlantVillage"
+    },
+    "cherry leaf spot": {
+      "candidate": null,
+      "reason": "PlantVillage has no cherry leaf-spot class"
+    },
+    "plum leaf": {
+      "candidate": null,
+      "reason": "PlantVillage has no plum class"
+    },
+    "maple leaf": {
+      "candidate": null,
+      "reason": "PlantVillage has no maple class"
+    }
+  },
+  "n_images": 7572,
+  "n_classes": 33,
+  "plantwild_total_images": 18542,
+  "plantwild_total_classes": 89,
+  "per_class_counts": {
+    "Apple___Black_rot": 173,
+    "Apple___healthy": 444,
+    "Apple___Cedar_apple_rust": 308,
+    "Apple___Apple_scab": 292,
+    "Pepper,_bell___healthy": 240,
+    "Pepper,_bell___Bacterial_spot": 117,
+    "Blueberry___healthy": 281,
+    "Cherry___healthy": 286,
+    "Cherry___Powdery_mildew": 114,
+    "Orange___Haunglongbing_(Citrus_greening)": 237,
+    "Corn___Cercospora_leaf_spot Gray_leaf_spot": 216,
+    "Corn___healthy": 156,
+    "Corn___Northern_Leaf_Blight": 224,
+    "Corn___Common_rust": 237,
+    "Grape___Black_rot": 229,
+    "Grape___healthy": 201,
+    "Peach___healthy": 157,
+    "Potato___Early_blight": 227,
+    "Potato___Late_blight": 240,
+    "Potato___healthy": 249,
+    "Raspberry___healthy": 180,
+    "Soybean___healthy": 242,
+    "Squash___Powdery_mildew": 281,
+    "Strawberry___healthy": 199,
+    "Strawberry___Leaf_scorch": 76,
+    "Tomato___Bacterial_spot": 280,
+    "Tomato___Early_blight": 346,
+    "Tomato___Late_blight": 295,
+    "Tomato___healthy": 226,
+    "Tomato___Leaf_Mold": 239,
+    "Tomato___Tomato_mosaic_virus": 189,
+    "Tomato___Septoria_leaf_spot": 220,
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 171
+  }
+}

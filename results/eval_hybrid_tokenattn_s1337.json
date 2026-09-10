@@ -1,0 +1,235 @@
+{
+  "ckpt": "../results/best_hybrid_tokenattn_s1337.pt",
+  "tag": "hybrid_tokenattn_s1337",
+  "eval_precision": "fp32",
+  "model_name": "hybrid",
+  "fusion": "token_cross_attn",
+  "seed": 1337,
+  "benchmarks": {
+    "plantvillage_test_aspect": {
+      "tag": "plantvillage_test/aspect",
+      "n": 5430,
+      "accuracy": 0.9992633517495396,
+      "macro_f1": 0.9984009333311562,
+      "balanced_accuracy": 0.9982159530478858,
+      "mcc": 0.9992273826987081,
+      "n_true_classes": 38,
+      "n_distinct_predicted_classes": 38,
+      "crop_species_accuracy": 1.0,
+      "top_predicted_classes": [
+        [
+          "Orange___Haunglongbing_(Citrus_greening)",
+          551,
+          0.10147329650092081
+        ],
+        [
+          "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          536,
+          0.0987108655616943
+        ],
+        [
+          "Soybean___healthy",
+          509,
+          0.09373848987108656
+        ],
+        [
+          "Peach___Bacterial_spot",
+          231,
+          0.042541436464088395
+        ],
+        [
+          "Tomato___Bacterial_spot",
+          213,
+          0.039226519337016576
+        ]
+      ],
+      "max_single_class_prediction_share": 0.10147329650092081,
+      "mean_confidence": 0.9507760405540466,
+      "mean_confidence_correct": 0.9508712887763977,
+      "mean_confidence_incorrect": 0.8214989304542542,
+      "ece_15bin": 0.048628327442576655,
+      "mce_15bin": 0.3793949484825134,
+      "overconfidence_gap": -0.048487305641174316
+    },
+    "plantdoc_aspect": {
+      "tag": "plantdoc/aspect",
+      "n": 2578,
+      "accuracy": 0.16408068269976725,
+      "macro_f1": 0.1113911357392435,
+      "balanced_accuracy": 0.15548099988397884,
+      "mcc": 0.1456677508147094,
+      "n_true_classes": 28,
+      "n_distinct_predicted_classes": 34,
+      "crop_species_accuracy": 0.32117920868890615,
+      "top_predicted_classes": [
+        [
+          "Pepper,_bell___healthy",
+          467,
+          0.18114817688130333
+        ],
+        [
+          "Cherry___healthy",
+          394,
+          0.15283165244375485
+        ],
+        [
+          "Strawberry___Leaf_scorch",
+          298,
+          0.11559348332040341
+        ],
+        [
+          "Tomato___Early_blight",
+          278,
+          0.1078355314197052
+        ],
+        [
+          "Tomato___Late_blight",
+          177,
+          0.0686578743211792
+        ]
+      ],
+      "max_single_class_prediction_share": 0.18114817688130333,
+      "mean_confidence": 0.7108395099639893,
+      "mean_confidence_correct": 0.8218242526054382,
+      "mean_confidence_incorrect": 0.689054548740387,
+      "ece_15bin": 0.5467588236978851,
+      "mce_15bin": 0.7390886712025919,
+      "overconfidence_gap": 0.5467588305473328
+    },
+    "plantdoc_square": {
+      "tag": "plantdoc/square",
+      "n": 2578,
+      "accuracy": 0.12684251357641582,
+      "macro_f1": 0.08916834764031624,
+      "balanced_accuracy": 0.12349358286884222,
+      "mcc": 0.10723576908564116,
+      "n_true_classes": 28,
+      "n_distinct_predicted_classes": 35,
+      "crop_species_accuracy": 0.2672614429790535,
+      "top_predicted_classes": [
+        [
+          "Cherry___healthy",
+          511,
+          0.1982156710628394
+        ],
+        [
+          "Pepper,_bell___healthy",
+          465,
+          0.1803723816912335
+        ],
+        [
+          "Strawberry___Leaf_scorch",
+          318,
+          0.12335143522110163
+        ],
+        [
+          "Tomato___Septoria_leaf_spot",
+          262,
+          0.10162916989914662
+        ],
+        [
+          "Tomato___Early_blight",
+          213,
+          0.082622187742436
+        ]
+      ],
+      "max_single_class_prediction_share": 0.1982156710628394,
+      "mean_confidence": 0.6892498135566711,
+      "mean_confidence_correct": 0.8188343048095703,
+      "mean_confidence_incorrect": 0.6704251766204834,
+      "ece_15bin": 0.5624072643342269,
+      "mce_15bin": 0.7727330936375161,
+      "overconfidence_gap": 0.5624073147773743
+    },
+    "plantwild_aspect": {
+      "tag": "plantwild/aspect",
+      "n": 7572,
+      "accuracy": 0.12968832540940306,
+      "macro_f1": 0.10823960307604945,
+      "balanced_accuracy": 0.1415017341216891,
+      "mcc": 0.10678932935902159,
+      "n_true_classes": 33,
+      "n_distinct_predicted_classes": 36,
+      "crop_species_accuracy": 0.24986793449550979,
+      "top_predicted_classes": [
+        [
+          "Pepper,_bell___healthy",
+          1751,
+          0.23124669836238773
+        ],
+        [
+          "Cherry___healthy",
+          1082,
+          0.14289487585842578
+        ],
+        [
+          "Strawberry___Leaf_scorch",
+          846,
+          0.11172741679873217
+        ],
+        [
+          "Tomato___Early_blight",
+          694,
+          0.09165346011621764
+        ],
+        [
+          "Tomato___Late_blight",
+          589,
+          0.0777865821447438
+        ]
+      ],
+      "max_single_class_prediction_share": 0.23124669836238773,
+      "mean_confidence": 0.6997112035751343,
+      "mean_confidence_correct": 0.8317626118659973,
+      "mean_confidence_incorrect": 0.6800337433815002,
+      "ece_15bin": 0.5700228845560898,
+      "mce_15bin": 0.7760684887007698,
+      "overconfidence_gap": 0.5700228810310364
+    },
+    "plantwild_square": {
+      "tag": "plantwild/square",
+      "n": 7572,
+      "accuracy": 0.10697305863708399,
+      "macro_f1": 0.09135071515698186,
+      "balanced_accuracy": 0.12125156817472163,
+      "mcc": 0.08332050073715763,
+      "n_true_classes": 33,
+      "n_distinct_predicted_classes": 38,
+      "crop_species_accuracy": 0.21513470681458002,
+      "top_predicted_classes": [
+        [
+          "Pepper,_bell___healthy",
+          1704,
+          0.22503961965134706
+        ],
+        [
+          "Cherry___healthy",
+          1431,
+          0.18898573692551507
+        ],
+        [
+          "Strawberry___Leaf_scorch",
+          964,
+          0.12731114632857898
+        ],
+        [
+          "Tomato___Septoria_leaf_spot",
+          706,
+          0.09323824617010038
+        ],
+        [
+          "Tomato___Early_blight",
+          583,
+          0.07699418911780243
+        ]
+      ],
+      "max_single_class_prediction_share": 0.22503961965134706,
+      "mean_confidence": 0.6831770539283752,
+      "mean_confidence_correct": 0.8273067474365234,
+      "mean_confidence_incorrect": 0.6659120917320251,
+      "ece_15bin": 0.5762039401223592,
+      "mce_15bin": 0.7967085532484384,
+      "overconfidence_gap": 0.5762040019035339
+    }
+  }
+}

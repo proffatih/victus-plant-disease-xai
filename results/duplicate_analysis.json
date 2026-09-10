@@ -1,0 +1,19 @@
+{
+  "n_images_hashed": 54305,
+  "hash": "pHash-64bit",
+  "near_duplicate_threshold_hamming": 5,
+  "exact_phash_collision_groups": 22,
+  "exact_collision_groups_straddling_splits": 8,
+  "test_images_in_straddling_exact_groups": 7,
+  "test_n_with_nn": 5430,
+  "min_hamming_mean": 12.543278084714549,
+  "min_hamming_median": 12.0,
+  "frac_test_with_near_duplicate_in_train": 0.02302025782688766,
+  "frac_test_hamming_0": 0.001289134438305709,
+  "frac_test_hamming_le_2": 0.00423572744014733,
+  "accuracy_test_with_near_duplicate": 1.0,
+  "n_test_with_near_duplicate": 125,
+  "accuracy_test_without_near_duplicate": 0.9986804901036758,
+  "n_test_without_near_duplicate": 5305,
+  "leakage_accuracy_gap_pp": 0.13195098963242335
+}

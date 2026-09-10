@@ -1,0 +1,29 @@
+{
+  "dataset": "plantwild",
+  "split_note": "PlantWild ships no partition file; seeded stratified 70/10/20 split created here",
+  "n_fit": 5299,
+  "n_val": 760,
+  "n_test": 1513,
+  "n_classes": 33,
+  "zero_shot_test_acc": 0.15069398545935228,
+  "zero_shot_test_macro_f1": 0.12987471251408045,
+  "selected_epoch": 20,
+  "selection_val_acc": 0.6526315789473685,
+  "finetuned_test_acc": 0.6530072703238599,
+  "finetuned_test_macro_f1": 0.6472328898335622,
+  "r2_protocol_running_max_test_acc": 0.6582947785855915,
+  "optimism_pp": 0.5287508261731633,
+  "hyperparams": {
+    "lr": 5e-05,
+    "epochs": 20,
+    "batch": 16,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.05,
+    "schedule": "cosine",
+    "val_frac": 0.15,
+    "seed": 42,
+    "stems_frozen": true,
+    "eval_precision": "fp32"
+  }
+}

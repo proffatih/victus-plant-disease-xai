@@ -1,0 +1,33 @@
+{
+  "n_train": 43445,
+  "n_test": 5430,
+  "n_classes": 38,
+  "classifier": "multinomial logistic regression",
+  "reference": "Noyan 2022 (arXiv:2206.04374) reports 49.0% from 8 background pixels vs 2.6% chance",
+  "probes": {
+    "eight_pixels_corners_and_edges": {
+      "n_features": 24,
+      "test_accuracy": 0.4007366482504604,
+      "chance": 0.02631578947368421,
+      "times_chance": 15.227992633517495
+    },
+    "border_ring_statistics": {
+      "n_features": 12,
+      "test_accuracy": 0.4858195211786372,
+      "chance": 0.02631578947368421,
+      "times_chance": 18.461141804788213
+    },
+    "foreground_colour_statistics": {
+      "n_features": 13,
+      "test_accuracy": 0.5320441988950276,
+      "chance": 0.02631578947368421,
+      "times_chance": 20.21767955801105
+    },
+    "all_low_level_features": {
+      "n_features": 49,
+      "test_accuracy": 0.7241252302025782,
+      "chance": 0.02631578947368421,
+      "times_chance": 27.516758747697974
+    }
+  }
+}

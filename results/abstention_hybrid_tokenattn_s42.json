@@ -1,0 +1,231 @@
+{
+  "tag": "hybrid_tokenattn_s42",
+  "ckpt": "../results/best_hybrid_tokenattn_s42.pt",
+  "temperature_from_indomain_val": 0.5984209775924683,
+  "benchmarks": {
+    "plantvillage_test": {
+      "n": 5430,
+      "accuracy": 0.9990791896869244,
+      "uncalibrated": {
+        "msp": {
+          "aurc": 0.00025355292630582543,
+          "coverage_at_risk_0.10": 1.0,
+          "coverage_at_risk_0.20": 1.0,
+          "coverage_at_risk_0.50": 1.0,
+          "selective_acc_at_coverage_0.10": 1.0,
+          "selective_acc_at_coverage_0.25": 1.0,
+          "selective_acc_at_coverage_0.50": 0.9996316758747698,
+          "mean_confidence": 0.9493696689605713,
+          "ece_15bin": 0.04975829015779227
+        },
+        "neg_entropy": {
+          "aurc": 0.0004184569399003827,
+          "coverage_at_risk_0.10": 1.0,
+          "coverage_at_risk_0.20": 1.0,
+          "coverage_at_risk_0.50": 1.0,
+          "selective_acc_at_coverage_0.10": 1.0,
+          "selective_acc_at_coverage_0.25": 0.9992636229749632,
+          "selective_acc_at_coverage_0.50": 0.9996316758747698
+        },
+        "neg_energy": {
+          "aurc": 0.0003263037658778641,
+          "coverage_at_risk_0.10": 1.0,
+          "coverage_at_risk_0.20": 1.0,
+          "coverage_at_risk_0.50": 1.0,
+          "selective_acc_at_coverage_0.10": 1.0,
+          "selective_acc_at_coverage_0.25": 1.0,
+          "selective_acc_at_coverage_0.50": 0.9992633517495396
+        }
+      },
+      "temp_scaled": {
+        "msp": {
+          "aurc": 8.479521380904357e-06,
+          "coverage_at_risk_0.10": 1.0,
+          "coverage_at_risk_0.20": 1.0,
+          "coverage_at_risk_0.50": 1.0,
+          "selective_acc_at_coverage_0.10": 1.0,
+          "selective_acc_at_coverage_0.25": 1.0,
+          "selective_acc_at_coverage_0.50": 1.0,
+          "mean_confidence": 0.9990295767784119,
+          "ece_15bin": 0.0005978664969871174
+        },
+        "neg_entropy": {
+          "aurc": 1.6722693907984096e-05,
+          "coverage_at_risk_0.10": 1.0,
+          "coverage_at_risk_0.20": 1.0,
+          "coverage_at_risk_0.50": 1.0,
+          "selective_acc_at_coverage_0.10": 1.0,
+          "selective_acc_at_coverage_0.25": 1.0,
+          "selective_acc_at_coverage_0.50": 1.0
+        },
+        "neg_energy": {
+          "aurc": 0.0003174179742246892,
+          "coverage_at_risk_0.10": 1.0,
+          "coverage_at_risk_0.20": 1.0,
+          "coverage_at_risk_0.50": 1.0,
+          "selective_acc_at_coverage_0.10": 1.0,
+          "selective_acc_at_coverage_0.25": 1.0,
+          "selective_acc_at_coverage_0.50": 0.9992633517495396
+        }
+      }
+    },
+    "plantdoc": {
+      "n": 2578,
+      "accuracy": 0.1799844840961986,
+      "uncalibrated": {
+        "msp": {
+          "aurc": 0.7720134746031257,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.0,
+          "selective_acc_at_coverage_0.10": 0.2906976744186047,
+          "selective_acc_at_coverage_0.25": 0.26046511627906976,
+          "selective_acc_at_coverage_0.50": 0.23584173778122575,
+          "mean_confidence": 0.7607952356338501,
+          "ece_15bin": 0.5808131186113836
+        },
+        "neg_entropy": {
+          "aurc": 0.7721819260662259,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.0,
+          "selective_acc_at_coverage_0.10": 0.2790697674418605,
+          "selective_acc_at_coverage_0.25": 0.26046511627906976,
+          "selective_acc_at_coverage_0.50": 0.23739332816136538
+        },
+        "neg_energy": {
+          "aurc": 0.7501614781000268,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.027152831652443754,
+          "selective_acc_at_coverage_0.10": 0.29844961240310075,
+          "selective_acc_at_coverage_0.25": 0.2666666666666666,
+          "selective_acc_at_coverage_0.50": 0.2342901474010861
+        }
+      },
+      "temp_scaled": {
+        "msp": {
+          "aurc": 0.7697616381436363,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.0,
+          "selective_acc_at_coverage_0.10": 0.29844961240310075,
+          "selective_acc_at_coverage_0.25": 0.26201550387596906,
+          "selective_acc_at_coverage_0.50": 0.2319627618308766,
+          "mean_confidence": 0.9058895707130432,
+          "ece_15bin": 0.7261403422828697
+        },
+        "neg_entropy": {
+          "aurc": 0.7700114806809629,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.0,
+          "selective_acc_at_coverage_0.10": 0.29844961240310075,
+          "selective_acc_at_coverage_0.25": 0.26046511627906976,
+          "selective_acc_at_coverage_0.50": 0.23351435221101635
+        },
+        "neg_energy": {
+          "aurc": 0.7512690119921521,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.02560124127230411,
+          "selective_acc_at_coverage_0.10": 0.29844961240310075,
+          "selective_acc_at_coverage_0.25": 0.2682170542635659,
+          "selective_acc_at_coverage_0.50": 0.23661753297129562
+        }
+      }
+    },
+    "plantwild": {
+      "n": 7572,
+      "accuracy": 0.15359218172213418,
+      "uncalibrated": {
+        "msp": {
+          "aurc": 0.8007014282694793,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.0,
+          "selective_acc_at_coverage_0.10": 0.22427440633245377,
+          "selective_acc_at_coverage_0.25": 0.248811410459588,
+          "selective_acc_at_coverage_0.50": 0.19941891178024296,
+          "mean_confidence": 0.7743248343467712,
+          "ece_15bin": 0.6207326004213747
+        },
+        "neg_entropy": {
+          "aurc": 0.8013480469547574,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.0,
+          "selective_acc_at_coverage_0.10": 0.22031662269129293,
+          "selective_acc_at_coverage_0.25": 0.2472266244057052,
+          "selective_acc_at_coverage_0.50": 0.19994717379820393
+        },
+        "neg_energy": {
+          "aurc": 0.7776186680199383,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.018753301637612255,
+          "selective_acc_at_coverage_0.10": 0.3021108179419525,
+          "selective_acc_at_coverage_0.25": 0.25198098256735335,
+          "selective_acc_at_coverage_0.50": 0.19994717379820393
+        }
+      },
+      "temp_scaled": {
+        "msp": {
+          "aurc": 0.7970661081093452,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.0,
+          "selective_acc_at_coverage_0.10": 0.25065963060686014,
+          "selective_acc_at_coverage_0.25": 0.24669836238774434,
+          "selective_acc_at_coverage_0.50": 0.20100369783412575,
+          "mean_confidence": 0.9133458137512207,
+          "ece_15bin": 0.7597536187691785
+        },
+        "neg_entropy": {
+          "aurc": 0.7978913523519526,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.0,
+          "selective_acc_at_coverage_0.10": 0.2453825857519789,
+          "selective_acc_at_coverage_0.25": 0.248811410459588,
+          "selective_acc_at_coverage_0.50": 0.20100369783412575
+        },
+        "neg_energy": {
+          "aurc": 0.7785969059618263,
+          "coverage_at_risk_0.10": 0.0,
+          "coverage_at_risk_0.20": 0.0,
+          "coverage_at_risk_0.50": 0.01901743264659271,
+          "selective_acc_at_coverage_0.10": 0.2941952506596306,
+          "selective_acc_at_coverage_0.25": 0.25092445853143164,
+          "selective_acc_at_coverage_0.50": 0.2002113048071843
+        }
+      }
+    }
+  },
+  "ood_detection_auroc_indomain_vs_field": {
+    "uncalibrated": {
+      "plantdoc": {
+        "msp": 0.9085134949787621,
+        "neg_entropy": 0.9039706998015508,
+        "neg_energy": 0.9220067592763246
+      },
+      "plantwild": {
+        "msp": 0.8789482843158715,
+        "neg_entropy": 0.8733861862887307,
+        "neg_energy": 0.9010615099343418
+      }
+    },
+    "temp_scaled": {
+      "plantdoc": {
+        "msp": 0.9251841977806257,
+        "neg_entropy": 0.9213205091388101,
+        "neg_energy": 0.922524170377768
+      },
+      "plantwild": {
+        "msp": 0.8992948480346804,
+        "neg_entropy": 0.8946980807452872,
+        "neg_energy": 0.9012030121636464
+      }
+    }
+  }
+}

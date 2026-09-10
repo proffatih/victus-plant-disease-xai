@@ -1,0 +1,5 @@
+probe,n_features,test_accuracy_pct,times_chance
+"Eight pixels (corners, edge midpoints)",24,40.074,15.23
+Border-ring colour statistics,12,48.582,18.46
+Foreground colour statistics (background masked out),13,53.204,20.22
+All 49 low-level colour features,49,72.413,27.52

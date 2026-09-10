@@ -1,0 +1,85 @@
+{
+  "plantdoc": {
+    "n": 2576,
+    "n_distinct_predicted_classes": 36,
+    "accuracy": 0.12072981366459627,
+    "top_predicted_classes": [
+      [
+        "Strawberry___Leaf_scorch",
+        878,
+        0.3408385093167702
+      ],
+      [
+        "Tomato___Early_blight",
+        348,
+        0.13509316770186336
+      ],
+      [
+        "Tomato___Late_blight",
+        303,
+        0.11762422360248448
+      ],
+      [
+        "Pepper,_bell___healthy",
+        150,
+        0.05822981366459627
+      ],
+      [
+        "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+        132,
+        0.05124223602484472
+      ],
+      [
+        "Cherry___healthy",
+        128,
+        0.049689440993788817
+      ],
+      [
+        "Corn___healthy",
+        101,
+        0.03920807453416149
+      ],
+      [
+        "Corn___Common_rust",
+        68,
+        0.026397515527950312
+      ]
+    ],
+    "crop_species_accuracy": 0.29153726708074534,
+    "n_crop_species": 13,
+    "mean_confidence": 0.7562697593167702,
+    "mean_confidence_correct": 0.7843135048231511,
+    "mean_confidence_incorrect": 0.752419161147903,
+    "ece_15bin": 0.635539945652174,
+    "mce_15bin": 0.8104440944881888,
+    "overconfidence_gap": 0.635539945652174,
+    "partition_train": {
+      "n": 2340,
+      "acc": 0.11324786324786325
+    },
+    "partition_test": {
+      "n": 236,
+      "acc": 0.19491525423728814
+    },
+    "partition_ratio_test_over_train": 1.721138471378318
+  },
+  "plantvillage_test": {
+    "n": 5430,
+    "accuracy": 0.996316758747698,
+    "balanced_accuracy": 0.9943259356988143,
+    "mcc": 0.9961372461503306,
+    "mean_confidence": 0.9658114180478821,
+    "ece_15bin": 0.03304478821362799,
+    "mce_15bin": 0.6514,
+    "class_imbalance_ratio": 36.733333333333334,
+    "min_class_support": 15,
+    "max_class_support": 551
+  },
+  "split_counts": {
+    "train": 43445,
+    "val": 5430,
+    "test": 5430,
+    "total": 54305
+  },
+  "manuscript_claimed_total": 54304
+}

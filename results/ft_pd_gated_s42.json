@@ -1,0 +1,29 @@
+{
+  "dataset": "plantdoc",
+  "split_note": "official PlantDoc train partition split into fit/val; official test partition held out",
+  "n_fit": 1991,
+  "n_val": 351,
+  "n_test": 236,
+  "n_classes": 28,
+  "zero_shot_test_acc": 0.2076271186440678,
+  "zero_shot_test_macro_f1": 0.19242601648066324,
+  "selected_epoch": 16,
+  "selection_val_acc": 0.6666666666666666,
+  "finetuned_test_acc": 0.673728813559322,
+  "finetuned_test_macro_f1": 0.6672960506603438,
+  "r2_protocol_running_max_test_acc": 0.6991525423728814,
+  "optimism_pp": 2.5423728813559365,
+  "hyperparams": {
+    "lr": 5e-05,
+    "epochs": 30,
+    "batch": 16,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.05,
+    "schedule": "cosine",
+    "val_frac": 0.15,
+    "seed": 42,
+    "stems_frozen": true,
+    "eval_precision": "fp32"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "model": "hybrid",
+  "fusion": "gated_linear",
+  "seed": 2024,
+  "preproc": "aspect",
+  "test": {
+    "loss": 0.035961802207743046,
+    "acc": 0.9988950276243094,
+    "top5": 1.0
+  },
+  "best_val": 0.9988950276243094,
+  "selected_epoch": 13,
+  "epochs": 15,
+  "img": 256,
+  "batch": 20,
+  "params_trainable": 49799202,
+  "params_total": 50348448,
+  "eval_precision": "fp32"
+}

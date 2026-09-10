@@ -1,0 +1,84 @@
+{
+  "dataset": "plantdoc",
+  "tag": "pd_gated_s42",
+  "models": {
+    "zero_shot": {
+      "ckpt": "../results/best_hybrid_gated_s42.pt",
+      "uncalibrated": {
+        "temperature": 1.0,
+        "n": 236,
+        "accuracy": 0.2076271186440678,
+        "mean_confidence": 0.7459378242492676,
+        "mean_confidence_correct": 0.8570490479469299,
+        "mean_confidence_incorrect": 0.7168230414390564,
+        "ece_15bin": 0.538310671572463,
+        "aurc": 0.6646115815458296,
+        "coverage_at_risk_0.20": 0.00847457627118644,
+        "coverage_at_risk_0.50": 0.0423728813559322
+      },
+      "T_indomain_val": {
+        "temperature": 0.6489733457565308,
+        "n": 236,
+        "accuracy": 0.2076271186440678,
+        "mean_confidence": 0.8811773657798767,
+        "mean_confidence_correct": 0.9399114847183228,
+        "mean_confidence_incorrect": 0.8657870888710022,
+        "ece_15bin": 0.6808466069021467,
+        "aurc": 0.6648085491828322,
+        "coverage_at_risk_0.20": 0.00847457627118644,
+        "coverage_at_risk_0.50": 0.059322033898305086
+      },
+      "T_target_val": {
+        "temperature": 2.277221918106079,
+        "n": 236,
+        "accuracy": 0.2076271186440678,
+        "mean_confidence": 0.23593440651893616,
+        "mean_confidence_correct": 0.29285433888435364,
+        "mean_confidence_incorrect": 0.22101953625679016,
+        "ece_15bin": 0.050163800480886034,
+        "aurc": 0.664074551471496,
+        "coverage_at_risk_0.20": 0.00847457627118644,
+        "coverage_at_risk_0.50": 0.09322033898305085
+      }
+    },
+    "fine_tuned": {
+      "ckpt": "../results/best_pd_gated_s42.pt",
+      "uncalibrated": {
+        "temperature": 1.0,
+        "n": 236,
+        "accuracy": 0.673728813559322,
+        "mean_confidence": 0.7752457857131958,
+        "mean_confidence_correct": 0.8287883400917053,
+        "mean_confidence_incorrect": 0.6646842360496521,
+        "ece_15bin": 0.16147011013354284,
+        "aurc": 0.15232597487079455,
+        "coverage_at_risk_0.20": 0.576271186440678,
+        "coverage_at_risk_0.50": 1.0
+      },
+      "T_indomain_val": {
+        "temperature": 0.7238380312919617,
+        "n": 236,
+        "accuracy": 0.673728813559322,
+        "mean_confidence": 0.8613613843917847,
+        "mean_confidence_correct": 0.9015049934387207,
+        "mean_confidence_incorrect": 0.7784674763679504,
+        "ece_15bin": 0.20886049002914103,
+        "aurc": 0.150721938810502,
+        "coverage_at_risk_0.20": 0.5932203389830508,
+        "coverage_at_risk_0.50": 1.0
+      },
+      "T_target_val": {
+        "temperature": 1.1303139925003052,
+        "n": 236,
+        "accuracy": 0.673728813559322,
+        "mean_confidence": 0.7246278524398804,
+        "mean_confidence_correct": 0.7819891571998596,
+        "mean_confidence_incorrect": 0.6061804890632629,
+        "ece_15bin": 0.14035003619678946,
+        "aurc": 0.15309977865209068,
+        "coverage_at_risk_0.20": 0.5635593220338984,
+        "coverage_at_risk_0.50": 1.0
+      }
+    }
+  }
+}
