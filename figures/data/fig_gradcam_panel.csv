@@ -1,0 +1,9 @@
+group,true,pred,confidence,path
+PlantVillage — correctly classified,Grape___Black_rot,Grape___Black_rot,0.967953,plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Grape___Black_rot/image (466).JPG
+PlantVillage — correctly classified,Potato___Late_blight,Potato___Late_blight,0.968273,plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Potato___Late_blight/image (835).JPG
+PlantVillage — correctly classified,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,0.967591,plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Corn___Northern_Leaf_Blight/image (453).JPG
+PlantVillage — correctly classified,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Spider_mites Two-spotted_spider_mite,0.968261,plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Tomato___Spider_mites Two-spotted_spider_mite/image (1383).JPG
+PlantDoc — misclassified,"Pepper,_bell___Bacterial_spot","Pepper,_bell___healthy",0.957858,plantdoc/PlantDoc-Dataset/train/Bell_pepper leaf spot/ed8e20.jpg
+PlantDoc — misclassified,Apple___Apple_scab,Peach___Bacterial_spot,0.223928,plantdoc/PlantDoc-Dataset/train/Apple Scab Leaf/applescableaf.jpg
+PlantDoc — misclassified,Potato___Late_blight,Tomato___Early_blight,0.543745,plantdoc/PlantDoc-Dataset/train/Potato leaf late blight/lb7_l.jpg
+PlantDoc — misclassified,Peach___healthy,Blueberry___healthy,0.510969,plantdoc/PlantDoc-Dataset/train/Peach leaf/stock-photo-two-sides-of-peach-leaf-isolate-on-white-17407162.jpg

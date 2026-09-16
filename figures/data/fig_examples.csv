@@ -1,0 +1,16 @@
+benchmark,true_class,path,predicted,confidence
+plantvillage,Tomato___Early_blight,plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Tomato___Early_blight/image (275).JPG,Tomato___Early_blight,0.967941
+plantvillage,Tomato___healthy,plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Tomato___healthy/image (188).JPG,Tomato___healthy,0.968457
+plantvillage,Corn___Common_rust,plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Corn___Common_rust/image (984).JPG,Corn___Common_rust,0.968704
+plantvillage,Apple___Apple_scab,plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Apple___Apple_scab/image (340).JPG,Apple___Apple_scab,0.969959
+plantvillage,Squash___Powdery_mildew,plantvillage/PV_root/Plant_leave_diseases_dataset_without_augmentation/Squash___Powdery_mildew/image (819).JPG,Squash___Powdery_mildew,0.967442
+plantdoc,Tomato___Early_blight,plantdoc/PlantDoc-Dataset/train/Tomato Early blight leaf/ebleafb.jpg,Potato___Early_blight,0.947034
+plantdoc,Tomato___healthy,plantdoc/PlantDoc-Dataset/train/Tomato leaf/tomato-leaf-6291945.jpg,Blueberry___healthy,0.662429
+plantdoc,Corn___Common_rust,plantdoc/PlantDoc-Dataset/train/Corn rust leaf/corn%20rust.jpg,Corn___healthy,0.877308
+plantdoc,Apple___Apple_scab,plantdoc/PlantDoc-Dataset/test/Apple Scab Leaf/816.jpg,"Pepper,_bell___healthy",0.206381
+plantdoc,Squash___Powdery_mildew,plantdoc/PlantDoc-Dataset/train/Squash Powdery mildew leaf/16488048256_f64cfea40e_z.jpg,Cherry___healthy,0.746291
+plantwild,Tomato___Early_blight,plantwild/extracted/plantwild/images/tomato early blight/6.jpg,Tomato___Late_blight,0.970665
+plantwild,Tomato___healthy,plantwild/extracted/plantwild/images/tomato leaf/90.jpg,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.898346
+plantwild,Corn___Common_rust,plantwild/extracted/plantwild/images/corn rust/google_0077.jpg,Corn___Cercospora_leaf_spot Gray_leaf_spot,0.811987
+plantwild,Apple___Apple_scab,plantwild/extracted/plantwild/images/apple scab/google_0075.jpg,Strawberry___Leaf_scorch,0.565013
+plantwild,Squash___Powdery_mildew,plantwild/extracted/plantwild/images/squash powdery mildew/66.jpg,"Pepper,_bell___healthy",0.826248

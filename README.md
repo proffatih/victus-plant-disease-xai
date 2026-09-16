@@ -70,8 +70,13 @@ python collect_numbers.py && python make_figures.py && python make_tables.py
 
 To evaluate without retraining, download the checkpoints from the release into
 `results/` and start from `run_after_training.sh`. The analysis scripts alone
-(`analysis/`) regenerate `numbers.json` and every figure from the released results
-without a GPU or the datasets.
+(`analysis/`) regenerate `numbers.json` and every quantitative figure from the
+released results without a GPU or the datasets. The two qualitative figures
+(`make_qualitative_figures.py`: benchmark examples, and the Grad-CAM panel of
+correctly classified PlantVillage and misclassified PlantDoc images) are the
+exception, since they display the images themselves; they need the image datasets
+and, for the saliency maps, the `hybrid_gated_s42` checkpoint. The image files they
+selected are listed in `figures/data/`, as paths relative to `DATA_ROOT`.
 
 ## Earlier release
 
