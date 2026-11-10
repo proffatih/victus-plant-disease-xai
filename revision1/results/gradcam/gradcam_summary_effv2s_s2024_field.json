@@ -1,0 +1,29 @@
+{
+  "tag": "effv2s_s2024",
+  "n_images": 362,
+  "n_classes": 38,
+  "n_diseased": 244,
+  "frac_diseased": 0.6740331491712708,
+  "n_correct": 218,
+  "n_misclassified": 144,
+  "sampling": "8/class over all classes + up to 60 misclassified images (of 2052 available)",
+  "faithfulness": {
+    "deletion_auc_mean": 0.4619385190484968,
+    "deletion_auc_sd": 0.4005244935698776,
+    "insertion_auc_mean": 0.5049426860908607,
+    "insertion_auc_sd": 0.388343378415798,
+    "steps": 21,
+    "baseline": "17x17 average-pool blur",
+    "note": "lower deletion AUC and higher insertion AUC indicate a more faithful map"
+  },
+  "cam_energy_off_leaf": {
+    "mean": 0.279610691972859,
+    "sd": 0.18475523535762095,
+    "median": 0.252542644739151,
+    "mean_correct": 0.2886702325365959,
+    "mean_misclassified": 0.2658955541749795,
+    "mean_diseased": 0.27126767816113645,
+    "mean_healthy": 0.2968623476513362
+  },
+  "branch_attribution": null
+}

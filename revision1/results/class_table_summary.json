@@ -1,0 +1,38 @@
+{
+ "n_classes": 38,
+ "n_hosts": 14,
+ "pd_classes": 28,
+ "pd_hosts": 13,
+ "pw_classes": 33,
+ "pw_hosts": 14,
+ "agent_types_pd": {
+  "Fungus": 11,
+  "--": 10,
+  "Bacterium": 2,
+  "Oomycete": 2,
+  "Arthropod pest": 1,
+  "Virus": 2
+ },
+ "agent_types_pw": {
+  "Fungus": 14,
+  "--": 12,
+  "Bacterium": 3,
+  "Oomycete": 2,
+  "Virus": 2
+ },
+ "pd_images": 2578,
+ "pw_images": 7572,
+ "pd_min_max": [
+  2,
+  192
+ ],
+ "pw_min_max": [
+  76,
+  444
+ ],
+ "pv_train_min_max": [
+  122,
+  4405
+ ],
+ "in_both_field": 27
+}

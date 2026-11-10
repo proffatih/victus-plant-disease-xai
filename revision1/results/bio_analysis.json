@@ -1,0 +1,544 @@
+{
+ "n_models": 12,
+ "plantdoc": {
+  "per_class_recall": {
+   "Apple___Apple_scab": {
+    "recall": 0.17383512544802868,
+    "host": "Apple",
+    "kind": "Fungus",
+    "pv_train": 504
+   },
+   "Apple___Cedar_apple_rust": {
+    "recall": 0.03745318352059925,
+    "host": "Apple",
+    "kind": "Fungus",
+    "pv_train": 219
+   },
+   "Apple___healthy": {
+    "recall": 0.0815018315018315,
+    "host": "Apple",
+    "kind": "Healthy",
+    "pv_train": 1317
+   },
+   "Blueberry___healthy": {
+    "recall": 0.15954415954415954,
+    "host": "Blueberry",
+    "kind": "Healthy",
+    "pv_train": 1202
+   },
+   "Cherry___healthy": {
+    "recall": 0.03654970760233918,
+    "host": "Cherry",
+    "kind": "Healthy",
+    "pv_train": 684
+   },
+   "Corn___Cercospora_leaf_spot Gray_leaf_spot": {
+    "recall": 0.5477941176470587,
+    "host": "Maize",
+    "kind": "Fungus",
+    "pv_train": 411
+   },
+   "Corn___Common_rust": {
+    "recall": 0.15158045977011494,
+    "host": "Maize",
+    "kind": "Fungus",
+    "pv_train": 954
+   },
+   "Corn___Northern_Leaf_Blight": {
+    "recall": 0.24913194444444442,
+    "host": "Maize",
+    "kind": "Fungus",
+    "pv_train": 789
+   },
+   "Grape___Black_rot": {
+    "recall": 0.18229166666666666,
+    "host": "Grape",
+    "kind": "Fungus",
+    "pv_train": 944
+   },
+   "Grape___healthy": {
+    "recall": 0.2367149758454106,
+    "host": "Grape",
+    "kind": "Healthy",
+    "pv_train": 339
+   },
+   "Peach___healthy": {
+    "recall": 0.00818452380952381,
+    "host": "Peach",
+    "kind": "Healthy",
+    "pv_train": 288
+   },
+   "Pepper,_bell___Bacterial_spot": {
+    "recall": 0.13145539906103287,
+    "host": "Bell pepper",
+    "kind": "Bacterium",
+    "pv_train": 797
+   },
+   "Pepper,_bell___healthy": {
+    "recall": 0.6775956284153005,
+    "host": "Bell pepper",
+    "kind": "Healthy",
+    "pv_train": 1182
+   },
+   "Potato___Early_blight": {
+    "recall": 0.10541310541310543,
+    "host": "Potato",
+    "kind": "Fungus",
+    "pv_train": 800
+   },
+   "Potato___Late_blight": {
+    "recall": 0.08730158730158731,
+    "host": "Potato",
+    "kind": "Oomycete",
+    "pv_train": 800
+   },
+   "Raspberry___healthy": {
+    "recall": 0.16736694677871147,
+    "host": "Raspberry",
+    "kind": "Healthy",
+    "pv_train": 297
+   },
+   "Soybean___healthy": {
+    "recall": 0.0038461538461538464,
+    "host": "Soybean",
+    "kind": "Healthy",
+    "pv_train": 4072
+   },
+   "Squash___Powdery_mildew": {
+    "recall": 0.49615384615384617,
+    "host": "Squash",
+    "kind": "Fungus",
+    "pv_train": 1467
+   },
+   "Strawberry___healthy": {
+    "recall": 0.1171875,
+    "host": "Strawberry",
+    "kind": "Healthy",
+    "pv_train": 364
+   },
+   "Tomato___Bacterial_spot": {
+    "recall": 0.012121212121212121,
+    "host": "Tomato",
+    "kind": "Bacterium",
+    "pv_train": 1701
+   },
+   "Tomato___Early_blight": {
+    "recall": 0.2973484848484848,
+    "host": "Tomato",
+    "kind": "Fungus",
+    "pv_train": 800
+   },
+   "Tomato___Late_blight": {
+    "recall": 0.4947447447447448,
+    "host": "Tomato",
+    "kind": "Oomycete",
+    "pv_train": 1527
+   },
+   "Tomato___Leaf_Mold": {
+    "recall": 0.07326007326007326,
+    "host": "Tomato",
+    "kind": "Fungus",
+    "pv_train": 762
+   },
+   "Tomato___Septoria_leaf_spot": {
+    "recall": 0.15894039735099338,
+    "host": "Tomato",
+    "kind": "Fungus",
+    "pv_train": 1417
+   },
+   "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "recall": 0.0,
+    "host": "Tomato",
+    "kind": "Arthropod pest",
+    "pv_train": 1340
+   },
+   "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "recall": 0.125,
+    "host": "Tomato",
+    "kind": "Virus",
+    "pv_train": 4285
+   },
+   "Tomato___Tomato_mosaic_virus": {
+    "recall": 0.010802469135802469,
+    "host": "Tomato",
+    "kind": "Virus",
+    "pv_train": 299
+   },
+   "Tomato___healthy": {
+    "recall": 0.023809523809523808,
+    "host": "Tomato",
+    "kind": "Healthy",
+    "pv_train": 1273
+   }
+  },
+  "recall_by_kind": {
+   "Fungus": {
+    "mean": 0.2231025854879066,
+    "sd_over_models": 0.02674925885463111,
+    "n_classes": 11
+   },
+   "Healthy": {
+    "mean": 0.1407843137254902,
+    "sd_over_models": 0.036192951624591074,
+    "n_classes": 10
+   },
+   "Bacterium": {
+    "mean": 0.05893186003683241,
+    "sd_over_models": 0.029455464406287678,
+    "n_classes": 2
+   },
+   "Oomycete": {
+    "mean": 0.2966820987654321,
+    "sd_over_models": 0.044513586673193016,
+    "n_classes": 2
+   },
+   "Virus": {
+    "mean": 0.07756410256410258,
+    "sd_over_models": 0.047015080424698465,
+    "n_classes": 2
+   },
+   "Arthropod pest": {
+    "mean": 0.0,
+    "sd_over_models": 0.0,
+    "n_classes": 1
+   }
+  },
+  "error_breakdown": {
+   "wrong_host": 0.7941595441595442,
+   "right_host_healthy_vs_diseased": 0.06366729977841089,
+   "right_host_wrong_disease": 0.14217315606204495
+  },
+  "spearman_recall_vs_pv_train": [
+   0.0016429356242458253,
+   0.9933798517910379
+  ],
+  "spearman_recall_vs_field_n": [
+   0.28387627671919685,
+   0.14320507630144974
+  ],
+  "top_attractors": [
+   [
+    "Pepper,_bell___healthy",
+    0.2930515986071542
+   ],
+   [
+    "Strawberry___Leaf_scorch",
+    0.12282367837923394
+   ],
+   [
+    "Cherry___healthy",
+    0.08820037986704653
+   ],
+   [
+    "Tomato___Late_blight",
+    0.074667616334283
+   ],
+   [
+    "Tomato___Early_blight",
+    0.06331117442228554
+   ],
+   [
+    "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+    0.0538144982589427
+   ]
+  ],
+  "classes_recall_ge_0.5": [
+   "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+   "Pepper,_bell___healthy"
+  ],
+  "classes_recall_le_0.05": [
+   "Apple___Cedar_apple_rust",
+   "Cherry___healthy",
+   "Peach___healthy",
+   "Soybean___healthy",
+   "Tomato___Bacterial_spot",
+   "Tomato___Spider_mites Two-spotted_spider_mite",
+   "Tomato___Tomato_mosaic_virus",
+   "Tomato___healthy"
+  ]
+ },
+ "plantwild": {
+  "per_class_recall": {
+   "Apple___Apple_scab": {
+    "recall": 0.06820776255707763,
+    "host": "Apple",
+    "kind": "Fungus",
+    "pv_train": 504
+   },
+   "Apple___Black_rot": {
+    "recall": 0.04865125240847784,
+    "host": "Apple",
+    "kind": "Fungus",
+    "pv_train": 497
+   },
+   "Apple___Cedar_apple_rust": {
+    "recall": 0.023268398268398268,
+    "host": "Apple",
+    "kind": "Fungus",
+    "pv_train": 219
+   },
+   "Apple___healthy": {
+    "recall": 0.03547297297297297,
+    "host": "Apple",
+    "kind": "Healthy",
+    "pv_train": 1317
+   },
+   "Blueberry___healthy": {
+    "recall": 0.19454329774614473,
+    "host": "Blueberry",
+    "kind": "Healthy",
+    "pv_train": 1202
+   },
+   "Cherry___Powdery_mildew": {
+    "recall": 0.06140350877192982,
+    "host": "Cherry",
+    "kind": "Fungus",
+    "pv_train": 842
+   },
+   "Cherry___healthy": {
+    "recall": 0.03875291375291375,
+    "host": "Cherry",
+    "kind": "Healthy",
+    "pv_train": 684
+   },
+   "Corn___Cercospora_leaf_spot Gray_leaf_spot": {
+    "recall": 0.4351851851851853,
+    "host": "Maize",
+    "kind": "Fungus",
+    "pv_train": 411
+   },
+   "Corn___Common_rust": {
+    "recall": 0.12798874824191278,
+    "host": "Maize",
+    "kind": "Fungus",
+    "pv_train": 954
+   },
+   "Corn___Northern_Leaf_Blight": {
+    "recall": 0.26785714285714285,
+    "host": "Maize",
+    "kind": "Fungus",
+    "pv_train": 789
+   },
+   "Corn___healthy": {
+    "recall": 0.3723290598290598,
+    "host": "Maize",
+    "kind": "Healthy",
+    "pv_train": 930
+   },
+   "Grape___Black_rot": {
+    "recall": 0.07678311499272197,
+    "host": "Grape",
+    "kind": "Fungus",
+    "pv_train": 944
+   },
+   "Grape___healthy": {
+    "recall": 0.15713101160862353,
+    "host": "Grape",
+    "kind": "Healthy",
+    "pv_train": 339
+   },
+   "Orange___Haunglongbing_(Citrus_greening)": {
+    "recall": 0.05063291139240506,
+    "host": "Orange",
+    "kind": "Bacterium",
+    "pv_train": 4405
+   },
+   "Peach___healthy": {
+    "recall": 0.004777070063694267,
+    "host": "Peach",
+    "kind": "Healthy",
+    "pv_train": 288
+   },
+   "Pepper,_bell___Bacterial_spot": {
+    "recall": 0.1274928774928775,
+    "host": "Bell pepper",
+    "kind": "Bacterium",
+    "pv_train": 797
+   },
+   "Pepper,_bell___healthy": {
+    "recall": 0.6475694444444445,
+    "host": "Bell pepper",
+    "kind": "Healthy",
+    "pv_train": 1182
+   },
+   "Potato___Early_blight": {
+    "recall": 0.22026431718061676,
+    "host": "Potato",
+    "kind": "Fungus",
+    "pv_train": 800
+   },
+   "Potato___Late_blight": {
+    "recall": 0.1309027777777778,
+    "host": "Potato",
+    "kind": "Oomycete",
+    "pv_train": 800
+   },
+   "Potato___healthy": {
+    "recall": 0.009705488621151271,
+    "host": "Potato",
+    "kind": "Healthy",
+    "pv_train": 122
+   },
+   "Raspberry___healthy": {
+    "recall": 0.20740740740740737,
+    "host": "Raspberry",
+    "kind": "Healthy",
+    "pv_train": 297
+   },
+   "Soybean___healthy": {
+    "recall": 0.009297520661157025,
+    "host": "Soybean",
+    "kind": "Healthy",
+    "pv_train": 4072
+   },
+   "Squash___Powdery_mildew": {
+    "recall": 0.3262158956109134,
+    "host": "Squash",
+    "kind": "Fungus",
+    "pv_train": 1467
+   },
+   "Strawberry___Leaf_scorch": {
+    "recall": 0.8333333333333334,
+    "host": "Strawberry",
+    "kind": "Fungus",
+    "pv_train": 887
+   },
+   "Strawberry___healthy": {
+    "recall": 0.07914572864321608,
+    "host": "Strawberry",
+    "kind": "Healthy",
+    "pv_train": 364
+   },
+   "Tomato___Bacterial_spot": {
+    "recall": 0.010416666666666666,
+    "host": "Tomato",
+    "kind": "Bacterium",
+    "pv_train": 1701
+   },
+   "Tomato___Early_blight": {
+    "recall": 0.23506743737957614,
+    "host": "Tomato",
+    "kind": "Fungus",
+    "pv_train": 800
+   },
+   "Tomato___Late_blight": {
+    "recall": 0.2983050847457627,
+    "host": "Tomato",
+    "kind": "Oomycete",
+    "pv_train": 1527
+   },
+   "Tomato___Leaf_Mold": {
+    "recall": 0.09658298465829845,
+    "host": "Tomato",
+    "kind": "Fungus",
+    "pv_train": 762
+   },
+   "Tomato___Septoria_leaf_spot": {
+    "recall": 0.13749999999999998,
+    "host": "Tomato",
+    "kind": "Fungus",
+    "pv_train": 1417
+   },
+   "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "recall": 0.09941520467836257,
+    "host": "Tomato",
+    "kind": "Virus",
+    "pv_train": 4285
+   },
+   "Tomato___Tomato_mosaic_virus": {
+    "recall": 0.013227513227513227,
+    "host": "Tomato",
+    "kind": "Virus",
+    "pv_train": 299
+   },
+   "Tomato___healthy": {
+    "recall": 0.03097345132743363,
+    "host": "Tomato",
+    "kind": "Healthy",
+    "pv_train": 1273
+   }
+  },
+  "recall_by_kind": {
+   "Fungus": {
+    "mean": 0.18355855855855854,
+    "sd_over_models": 0.016094714982942047,
+    "n_classes": 14
+   },
+   "Healthy": {
+    "mean": 0.13704415705464287,
+    "sd_over_models": 0.028018380611690832,
+    "n_classes": 12
+   },
+   "Bacterium": {
+    "mean": 0.04705573080967403,
+    "sd_over_models": 0.01612502398753971,
+    "n_classes": 3
+   },
+   "Oomycete": {
+    "mean": 0.22320872274143302,
+    "sd_over_models": 0.036466747835748804,
+    "n_classes": 2
+   },
+   "Virus": {
+    "mean": 0.05416666666666667,
+    "sd_over_models": 0.032253119982368864,
+    "n_classes": 2
+   }
+  },
+  "error_breakdown": {
+   "wrong_host": 0.8526288492706645,
+   "right_host_healthy_vs_diseased": 0.0460032414910859,
+   "right_host_wrong_disease": 0.10136790923824959
+  },
+  "spearman_recall_vs_pv_train": [
+   0.14811100794364662,
+   0.4107483062250469
+  ],
+  "spearman_recall_vs_field_n": [
+   -0.13171751354271255,
+   0.46497665941008104
+  ],
+  "top_attractors": [
+   [
+    "Pepper,_bell___healthy",
+    0.3315137763371151
+   ],
+   [
+    "Strawberry___Leaf_scorch",
+    0.11482658022690438
+   ],
+   [
+    "Tomato___Late_blight",
+    0.09890437601296596
+   ],
+   [
+    "Cherry___healthy",
+    0.08547163695299838
+   ],
+   [
+    "Tomato___Early_blight",
+    0.06258670988654781
+   ],
+   [
+    "Corn___healthy",
+    0.05144894651539708
+   ]
+  ],
+  "classes_recall_ge_0.5": [
+   "Pepper,_bell___healthy",
+   "Strawberry___Leaf_scorch"
+  ],
+  "classes_recall_le_0.05": [
+   "Apple___Black_rot",
+   "Apple___Cedar_apple_rust",
+   "Apple___healthy",
+   "Cherry___healthy",
+   "Peach___healthy",
+   "Potato___healthy",
+   "Soybean___healthy",
+   "Tomato___Bacterial_spot",
+   "Tomato___Tomato_mosaic_virus",
+   "Tomato___healthy"
+  ]
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "n_whole": 2558,
+ "n_crops": 8900,
+ "n_crops_ge100": 6648,
+ "crop_classes": {
+  "Grape___Black_rot": 133,
+  "Pepper,_bell___healthy": 323,
+  "Raspberry___healthy": 556,
+  "Tomato___Leaf_Mold": 293,
+  "Tomato___healthy": 396,
+  "Corn___Common_rust": 127,
+  "Pepper,_bell___Bacterial_spot": 264,
+  "Grape___healthy": 220,
+  "Cherry___healthy": 240,
+  "Apple___healthy": 247,
+  "Squash___Powdery_mildew": 254,
+  "Peach___healthy": 619,
+  "Potato___Early_blight": 327,
+  "Tomato___Bacterial_spot": 279,
+  "Potato___Late_blight": 250,
+  "Blueberry___healthy": 849,
+  "Corn___Northern_Leaf_Blight": 369,
+  "Tomato___Tomato_mosaic_virus": 261,
+  "Corn___Cercospora_leaf_spot Gray_leaf_spot": 79,
+  "Apple___Cedar_apple_rust": 179,
+  "Tomato___Septoria_leaf_spot": 436,
+  "Apple___Apple_scab": 171,
+  "Soybean___healthy": 266,
+  "Tomato___Late_blight": 221,
+  "Tomato___Early_blight": 214,
+  "Strawberry___healthy": 492,
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 822,
+  "Potato___healthy": 11,
+  "Tomato___Spider_mites Two-spotted_spider_mite": 2
+ },
+ "models": {
+  "effv2s_s42": {
+   "A_whole_38way": 0.19898358092259577,
+   "B_whole_restricted": 0.22283033620015638,
+   "C_crops_38way": 0.15179775280898877,
+   "D_crops_restricted": 0.26741573033707866,
+   "E_crops_ge100_38way": 0.1887785800240674,
+   "F_crops_ge100_restricted": 0.26534296028880866,
+   "n_restricted_classes": 29
+  },
+  "effv2s_s1337": {
+   "A_whole_38way": 0.21188428459734168,
+   "B_whole_restricted": 0.2419859265050821,
+   "C_crops_38way": 0.14314606741573033,
+   "D_crops_restricted": 0.2765168539325843,
+   "E_crops_ge100_38way": 0.18005415162454874,
+   "F_crops_ge100_restricted": 0.2695547533092659,
+   "n_restricted_classes": 29
+  },
+  "effv2s_s2024": {
+   "A_whole_38way": 0.20641125879593433,
+   "B_whole_restricted": 0.23064894448788115,
+   "C_crops_38way": 0.1903370786516854,
+   "D_crops_restricted": 0.2895505617977528,
+   "E_crops_ge100_38way": 0.22111913357400723,
+   "F_crops_ge100_restricted": 0.28941034897713597,
+   "n_restricted_classes": 29
+  },
+  "swinv2t_s42": {
+   "A_whole_38way": 0.1641907740422205,
+   "B_whole_restricted": 0.19546520719311963,
+   "C_crops_38way": 0.1251685393258427,
+   "D_crops_restricted": 0.19629213483146069,
+   "E_crops_ge100_38way": 0.15027075812274368,
+   "F_crops_ge100_restricted": 0.1901323706377858,
+   "n_restricted_classes": 29
+  },
+  "swinv2t_s1337": {
+   "A_whole_38way": 0.18999218139171228,
+   "B_whole_restricted": 0.20875684128225175,
+   "C_crops_38way": 0.12820224719101123,
+   "D_crops_restricted": 0.1989887640449438,
+   "E_crops_ge100_38way": 0.16034897713598076,
+   "F_crops_ge100_restricted": 0.19389290012033694,
+   "n_restricted_classes": 29
+  },
+  "swinv2t_s2024": {
+   "A_whole_38way": 0.1872556684910086,
+   "B_whole_restricted": 0.20093823299452698,
+   "C_crops_38way": 0.1302247191011236,
+   "D_crops_restricted": 0.19123595505617977,
+   "E_crops_ge100_38way": 0.15734055354993984,
+   "F_crops_ge100_restricted": 0.19374247894103488,
+   "n_restricted_classes": 29
+  },
+  "hybrid_gated_s42": {
+   "A_whole_38way": 0.1782642689601251,
+   "B_whole_restricted": 0.19351055512118842,
+   "C_crops_38way": 0.13370786516853933,
+   "D_crops_restricted": 0.22067415730337078,
+   "E_crops_ge100_38way": 0.16817087845968712,
+   "F_crops_ge100_restricted": 0.24022262334536704,
+   "n_restricted_classes": 29
+  },
+  "hybrid_gated_s1337": {
+   "A_whole_38way": 0.16223612197028928,
+   "B_whole_restricted": 0.18373729476153244,
+   "C_crops_38way": 0.12876404494382024,
+   "D_crops_restricted": 0.25910112359550563,
+   "E_crops_ge100_38way": 0.161101083032491,
+   "F_crops_ge100_restricted": 0.2545126353790614,
+   "n_restricted_classes": 29
+  },
+  "hybrid_gated_s2024": {
+   "A_whole_38way": 0.18803752931978107,
+   "B_whole_restricted": 0.20289288506645817,
+   "C_crops_38way": 0.16089887640449438,
+   "D_crops_restricted": 0.22539325842696628,
+   "E_crops_ge100_38way": 0.20141395908543924,
+   "F_crops_ge100_restricted": 0.2516546329723225,
+   "n_restricted_classes": 29
+  },
+  "hybrid_tokenattn_s42": {
+   "A_whole_38way": 0.181391712275215,
+   "B_whole_restricted": 0.20797498045347929,
+   "C_crops_38way": 0.13123595505617977,
+   "D_crops_restricted": 0.22853932584269662,
+   "E_crops_ge100_38way": 0.16606498194945848,
+   "F_crops_ge100_restricted": 0.2453369434416366,
+   "n_restricted_classes": 29
+  },
+  "hybrid_tokenattn_s1337": {
+   "A_whole_38way": 0.16497263487099295,
+   "B_whole_restricted": 0.18412822517591867,
+   "C_crops_38way": 0.12876404494382024,
+   "D_crops_restricted": 0.2157303370786517,
+   "E_crops_ge100_38way": 0.16365824308062576,
+   "F_crops_ge100_restricted": 0.22247292418772563,
+   "n_restricted_classes": 29
+  },
+  "hybrid_tokenattn_s2024": {
+   "A_whole_38way": 0.17474589523064896,
+   "B_whole_restricted": 0.19781078967943705,
+   "C_crops_38way": 0.17112359550561798,
+   "D_crops_restricted": 0.24146067415730338,
+   "E_crops_ge100_38way": 0.18456678700361012,
+   "F_crops_ge100_restricted": 0.24202767749699158,
+   "n_restricted_classes": 29
+  }
+ },
+ "mean_sd_over_models": {
+  "A_whole_38way": [
+   0.1840304925723221,
+   0.016294322269309037
+  ],
+  "B_whole_restricted": [
+   0.20589001824341935,
+   0.017940514441466694
+  ],
+  "C_crops_38way": [
+   0.14361423220973782,
+   0.02079161427896012
+  ],
+  "D_crops_restricted": [
+   0.23424157303370788,
+   0.032734293250657714
+  ],
+  "E_crops_ge100_38way": [
+   0.17524067388688327,
+   0.02070841830142472
+  ],
+  "F_crops_ge100_restricted": [
+   0.2381919374247894,
+   0.032131258355410926
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+  "tag": "hybrid_gated_s2024",
+  "n_images": 361,
+  "n_classes": 38,
+  "n_diseased": 239,
+  "frac_diseased": 0.6620498614958449,
+  "n_correct": 214,
+  "n_misclassified": 147,
+  "sampling": "8/class over all classes + up to 60 misclassified images (of 2102 available)",
+  "faithfulness": {
+    "deletion_auc_mean": 0.442715556165197,
+    "deletion_auc_sd": 0.3844708747506363,
+    "insertion_auc_mean": 0.48862037005920705,
+    "insertion_auc_sd": 0.36826014966843956,
+    "steps": 21,
+    "baseline": "17x17 average-pool blur",
+    "note": "lower deletion AUC and higher insertion AUC indicate a more faithful map"
+  },
+  "cam_energy_off_leaf": {
+    "mean": 0.29560115528899217,
+    "sd": 0.24807176509355772,
+    "median": 0.23431837558746338,
+    "mean_correct": 0.30668047209766425,
+    "mean_misclassified": 0.27947208183963285,
+    "mean_diseased": 0.27983138401638014,
+    "mean_healthy": 0.32649439573287964
+  },
+  "branch_attribution": {
+    "full": 0.66875,
+    "cnn_only": 0.675,
+    "tr_only": 0.09375,
+    "n": 320
+  }
+}
